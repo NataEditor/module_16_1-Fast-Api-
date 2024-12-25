@@ -14,7 +14,7 @@ async def admin_page():
 
 
 @app.get('/user/{user_id}')
-async def user_page_id(user_id: str)
+async def user_page_id(user_id: int)
     return f'Вы вошли как пользователь № {user_id}'
 
 

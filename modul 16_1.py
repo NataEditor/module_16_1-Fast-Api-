@@ -19,5 +19,5 @@ async def user_page_id(user_id: str)
 
 
 @app.get('/user/{user_name}/{age}')
-async def user_page(user_name: str, age: str)
+async def user_page(user_name: str, age: int)
     return f'Информация о пользователе. Имя: {username}, Возраст: {age}'

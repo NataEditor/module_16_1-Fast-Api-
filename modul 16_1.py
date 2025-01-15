@@ -14,10 +14,10 @@ async def admin_page():
 
 
 @app.get('/user/{user_id}')
-async def user_page_id(user_id: int)
+async def user_page_id(user_id: int):
     return f'Вы вошли как пользователь № {user_id}'
 
 
 @app.get('/user/{user_name}/{age}')
-async def user_page(user_name: str, age: int)
-    return f'Информация о пользователе. Имя: {username}, Возраст: {age}'
+async def user_page(user_name: str, age: int):
+    return f'Информация о пользователе. Имя: {user_name}, Возраст: {age}'

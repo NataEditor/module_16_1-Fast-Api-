@@ -18,6 +18,6 @@ async def user_page_id(user_id: int):
     return f'Вы вошли как пользователь № {user_id}'
 
 
-@app.get('/user/{user_name}/{age}')
+@app.get('/user/')
 async def user_page(user_name: str, age: int):
     return f'Информация о пользователе. Имя: {user_name}, Возраст: {age}'
